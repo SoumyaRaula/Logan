@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="LoganLogin">
+<head>
+    <meta charset=utf-8>
+    <title>Ani AngularJS Dashboard Theme</title>
+    <meta name=description>
+    <meta name=viewport content="width=device-width">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel=stylesheet href=main.css>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="logan-wizard.js"></script>
+</head>
+<body ng-app="LoganLogin" ng-controller="LoganCtl">
+    {{ test }}
+    <div class=login-page>
+        <div class=row>
+            <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4"><img src=flat-avatar.png
+                                                                                class=user-avatar>
+                <h1>The Logan
+                    <small>Ultimate log analyzer</small>
+                </h1>
+                <form role=form>
+                    <div class=form-content>
+                        <div class=form-group>
+                            <input id="username" ng-model="username" type=text class="form-control input-underline input-lg"
+                                                     placeholder=Username></div>
+                        <div class=form-group>
+                            <input id="password" ng-model="password" type=password class="form-control input-underline input-lg"
+                                                     placeholder=Password></div>
+                    </div>
+                    <button ng-click="log_me()" type=submit class="btn btn-white btn-outline btn-lg btn-rounded">Login
+                    </button>
+                    </br>
+                    <div class = "alert alert-{{ message_type }}" role = "alert" ng-show="message != ''">
+                        {{ message }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
