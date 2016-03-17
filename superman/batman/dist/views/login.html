@@ -1,0 +1,32 @@
+<!doctype html>
+<html class=no-js>
+<head>
+    <meta charset=utf-8>
+    <title>Ani AngularJS Dashboard Theme</title>
+    <meta name=description>
+    <meta name=viewport content="width=device-width">
+    <link rel=stylesheet href=styles/main.css>
+    <script src="scripts/logan-wizard.js"></script>
+</head>
+<body ng-app="LoganLogin" ng-controller="LoganCtl">
+<div class=login-page>
+    <div class=row>
+        <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4"><img src=images/flat-avatar.png
+                                                                            class=user-avatar>
+            <h1>The Logan
+                <small>Ultimate log analyzer</small>
+            </h1>
+            <form role=form ng-submit=submit()>
+                <div class=form-content>
+                    <div class=form-group><input type=text class="form-control input-underline input-lg"
+                                                 placeholder=Email></div>
+                    <div class=form-group><input type=password class="form-control input-underline input-lg"
+                                                 placeholder=Password></div>
+                </div>
+                <button ng-click="bindLogin()" type=submit class="btn btn-white btn-outline btn-lg btn-rounded">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
