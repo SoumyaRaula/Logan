@@ -18,6 +18,7 @@ class Logan(QObject):
             print "Enter the credentials in the UI"
             print "Username : ", username
             print "Password : ", password
+            print "Test Line for Demo"
             username = str(username)
             password = str(password)
             if username or password is None:
